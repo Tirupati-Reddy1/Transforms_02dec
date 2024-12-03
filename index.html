@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #br1:checked~.innerpart{
+                transform: none;
+            }
+            #br2:checked~.innerpart{
+                transform: translate(50px,100px);
+            }
+            #br3:checked~.innerpart{
+                transform: rotate(45deg);
+            }
+            #br4:checked~.innerpart{
+                transform: rotate(30deg);
+            }
+            #br5:checked~.innerpart{
+            transform: skew(10deg,30deg);
+            }
+            #br6:checked~.innerpart{
+                transform: skew(10deg,40deg);
+            }
+            #br7:checked~.innerpart{
+                transform: rotateX(45deg,60deg);
+            }
+            #br8:checked~.innerpart{
+                transform: rotateY(30deg);
+            }
+
+            
+            .innerpart{
+                border: 2px solid;
+                height: 100px;
+                width: 110px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body><h2 style="text-align: center; color: red;">CSS TRANSFORMATIONS</h2>
+        <div id="main">
+
+            <div>
+<input id="br1" type="radio" name="select" value="1">Transform:none();<br>
+<input id="br2" type="radio" name="select">Transform:translate(50px, 100px);<br>
+<input id="br3" type="radio" name="select">Transform:rotate(45deg);<br>
+<input id="br4" type="radio" name="select">Transform:rotate(90deg);<br>
+<input id="br5" type="radio" name="select">Transform:scale(1,2);<br>
+<input id="br6" type="radio" name="select">Transform:skew(30deg, 50deg);<br>
+<input id="br7" type="radio" name="select">Transform:rotateX for 3D(45deg);<br>
+<input id="br8" type="radio" name="select">Transform:rotateY(45deg);<br>
+<input id="br9" type="radio" name="select">Transform:rotateZ(45deg);<br>
+<div class="innerpart">
+
+
+</div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
